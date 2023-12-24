@@ -1,0 +1,302 @@
+* {
+    margin: 5px;
+}
+
+main {}
+
+/* ---------
+universal 
+-------- */
+.primary-btn {
+    border-radius: 8px;
+    color: #FFF;
+    font-size: 1.25rem;
+    font-weight: 700;
+    background: #FF900E;
+    padding: 20px 25px;
+    color: #FFF;
+    cursor: pointer;
+    border: 0;
+}
+
+.logo {
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: #131313;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+/* header styles */
+header {
+    background: rgba(255, 144, 14, 0.10);
+    padding: 50px 240px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+
+nav>ul {
+    display: flex;
+
+}
+
+nav li {
+    list-style: none;
+
+}
+
+nav li {
+    list-style: none;
+    margin-right: 30px;
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: #424242;
+}
+
+/* -----
+banner */
+.banner-content {
+    max-width: 800px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.banner-content h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    color: #131313;
+}
+
+.banner img {
+    margin-top: 20px;
+    width: 100%;
+}
+
+/* 
+-------
+teamas
+--------- */
+.team-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.team-img {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.team-info {
+    width: 592px;
+    height: 280px;
+    padding-left: 70px;
+    padding-right: 70px;
+
+}
+
+.team-dis {
+    font-size: 4rem;
+    width: 700;
+}
+
+/* 
+--------
+features
+---------- */
+
+.features {
+    display: flex;
+    justify-content: center;
+    margin-top: 130px;
+    gap: 100px;
+
+
+}
+
+.features-titel {
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: #131313;
+    border-left: 5px solid #FF900E;
+}
+
+.features-dis {
+    color: #727272;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    width: 592px;
+    height: 50px;
+
+}
+
+.card {
+    width: 482px;
+    height: 134px;
+    padding: 30px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    background: #FFF;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+}
+
+.features-img img {
+    height: 90%;
+    /* padding-left: 50px; */
+    margin-left: 50px;
+
+
+}
+
+.ten-years-batch {
+    /* height: 152px; */
+    width: 340px;
+    padding: 40px;
+    background-color: #FF900E;
+    border-radius: 8px;
+    text-align: center;
+    position: relative;
+    bottom: 100px;
+}
+
+.ten-years-batch h1 {
+    font-size: 80px;
+    color: #FFF;
+    text-align: center;
+    align-items: center;
+
+}
+
+.ten-years-batch h4 {
+    font-size: 20px;
+    color: #FFF;
+
+
+}
+
+/* 
+---------
+facts
+--------- */
+
+.facts {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.award-winning:hover{
+    width: 40%;
+}
+.fact-card-container {
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.fact-card-container .award-winning {
+    border-radius: 8px;
+    border: 1px solid orange;
+    text-align: center;
+    padding: 30px;
+
+}
+
+/* Our Sponsors */
+
+.sponsors h1 {
+    font-size: 3rem;
+    margin: 40px 0 40px 0;
+}
+
+.sponsors {
+    text-align: center;
+}
+
+.sponsor-img-container {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 40px;
+}
+
+.sponsors-img-container img {
+    width: 165px;
+}
+
+/* 
+------
+responsive 
+------ */
+@media screen and (max-width:576px) {
+    header {
+        padding: 20px;
+    }
+
+    nav,
+    .sponsor-img-container,
+    .fact-card-container,
+    .features,
+    .team-content {
+        flex-direction: column;
+
+    }
+    .banner-content h1{
+        font-size: 30px;
+
+    }
+
+    .team-img {
+        grid-template-columns: 1fr;
+    }
+    .team-info{
+        padding-left: 0px;
+        padding-right: 0px;
+        margin-left: 200px;
+        margin-right: 0;
+    }
+    .features-img img {
+        width:110%;
+        margin-left: 0px;
+        padding-left: 0;
+    }
+    .ten-years-batch{
+        position:static;
+        width: 300px;
+        padding-left: 0;
+    }
+    .team-content{
+        padding-left: 60px;
+    }
+    .teams-content,
+    .facts-card-container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .card {
+        width: 400px;
+     
+        padding: 30px;
+    }
+    
+    .facts-card-container {
+        gap: 20px;
+    }
+
+
+}
